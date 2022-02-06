@@ -47,12 +47,12 @@ struct ContentView: View {
                             .padding(.bottom, 30)
                     }
                     HStack {
-                        TextField("Login", text: $login)
+                        TextField("Логин:", text: $login)
                             .frame(maxWidth: 300)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                     }
                     HStack {
-                        SecureField("Password", text: $password)
+                        SecureField("Пароль:", text: $password)
                             .frame(maxWidth: 300)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                     }
