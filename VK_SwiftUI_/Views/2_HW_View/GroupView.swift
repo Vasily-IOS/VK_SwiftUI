@@ -11,9 +11,9 @@ import SwiftUI
 
 struct GroupView: View {
     var body: some View {
-        HStack {
+        VStack {
             ImageBuilderView {
-                Image("9")
+                Image("10")
             }
             Text("Группа занятий альпинизмом")
                 .padding(.leading, 10)
@@ -38,7 +38,6 @@ struct CircleShadow: ViewModifier {
         content
             .clipShape(Circle())
             .shadow(color: shadowColor, radius: shadowRadius)
-
     }
 }
 
@@ -56,7 +55,9 @@ struct ImageBuilderView: View {
         content
             .resizable()
             .frame(width: 80, height: 80)
+            .aspectRatio(contentMode: .fill)
+            .scaledToFit()
             .modifier(CircleShadow(shadowColor: .black, shadowRadius: 5))
+            .padding()
     }
 }
-

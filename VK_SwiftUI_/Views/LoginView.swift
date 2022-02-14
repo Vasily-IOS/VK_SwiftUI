@@ -10,9 +10,15 @@ import Combine
 
 struct LoginView: View {
 
+// MARK: - properties
+
     @State private var login = ""
     @State private var password = ""
     @State private var shouldShowLogo: Bool = true
+    @State private var shouldCorrectAuth: Bool = false
+    @Binding var isUserLoggedIn: Bool
+
+// MARK: - keyboard
 
     private let keyboardIsOnPublisher = Publishers.Merge(
            NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
@@ -22,11 +28,12 @@ struct LoginView: View {
        )
            .removeDuplicates()
 
+// MARK: - view
 
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-                Image("9")
+                Image("4")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
@@ -58,7 +65,7 @@ struct LoginView: View {
                     }
                 }.frame(maxWidth: 300)
 
-                Button(action: {print("Hello")}, label: {
+                Button(action: isCorrectAuth, label: {
                     Text("Log in")
                 })
                 .padding(.top, 50)
@@ -72,16 +79,28 @@ struct LoginView: View {
             }
         }.onTapGesture {
             UIApplication.shared.endEditing()
+        }.alert(isPresented: $shouldCorrectAuth, content: {
+            Alert(title: Text("Attention"), message: Text("Incorrent Login/Password was entered"))
+        })
+    }
+
+    private func isCorrectAuth(){
+        if login == "123" && password == "123" {
+            isUserLoggedIn = true
+        } else {
+            shouldCorrectAuth = true
         }
+        login = ""
+        password = ""
     }
 
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginView
+//    }
+//}
 
 extension UIApplication {
    func endEditing() {
