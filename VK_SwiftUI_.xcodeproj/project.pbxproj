@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D164D8927B9A7FA009C6465 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D164D8827B9A7FA009C6465 /* ContainerView.swift */; };
+		5D164D8D27B9AB99009C6465 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D164D8C27B9AB99009C6465 /* TabBarView.swift */; };
+		5D164D9227B9B0DC009C6465 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D164D9127B9B0DC009C6465 /* FriendModel.swift */; };
 		5D49DD8B27B3194D0095D3E9 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D49DD8A27B3194D0095D3E9 /* NameView.swift */; };
 		5D49DD9227B31C390095D3E9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D49DD9127B31C380095D3E9 /* View.swift */; };
 		5D49DDBC27B3EC360095D3E9 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D49DDBB27B3EC360095D3E9 /* GroupView.swift */; };
@@ -14,9 +17,17 @@
 		5D913ABC27AFC879009DE4FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D913ABB27AFC879009DE4FD /* LoginView.swift */; };
 		5D913ABE27AFC87A009DE4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D913ABD27AFC87A009DE4FD /* Assets.xcassets */; };
 		5D913AC127AFC87A009DE4FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D913AC027AFC87A009DE4FD /* Preview Assets.xcassets */; };
+		5DC054A227BAA0EE0077A75B /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054A127BAA0EE0077A75B /* MainScreenView.swift */; };
+		5DC054A927BAA13A0077A75B /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054A827BAA13A0077A75B /* GalleryView.swift */; };
+		5DC054AC27BAA15D0077A75B /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054AB27BAA15D0077A75B /* FriendsView.swift */; };
+		5DC054B127BAC40C0077A75B /* FriendPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054B027BAC40C0077A75B /* FriendPhotoModel.swift */; };
+		5DC054B527BAE1550077A75B /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC054B427BAE1550077A75B /* QGrid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D164D8827B9A7FA009C6465 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		5D164D8C27B9AB99009C6465 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		5D164D9127B9B0DC009C6465 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		5D49DD8A27B3194D0095D3E9 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		5D49DD9127B31C380095D3E9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		5D49DDBB27B3EC360095D3E9 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
@@ -26,6 +37,10 @@
 		5D913ABD27AFC87A009DE4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D913AC027AFC87A009DE4FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D913AC227AFC87A009DE4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC054A127BAA0EE0077A75B /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		5DC054A827BAA13A0077A75B /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		5DC054AB27BAA15D0077A75B /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		5DC054B027BAC40C0077A75B /* FriendPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +48,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC054B527BAE1550077A75B /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D164D9027B9B0B4009C6465 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D164D9127B9B0DC009C6465 /* FriendModel.swift */,
+				5DC054B027BAC40C0077A75B /* FriendPhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5D49DD8927B319310095D3E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D164D8827B9A7FA009C6465 /* ContainerView.swift */,
+				5D164D8C27B9AB99009C6465 /* TabBarView.swift */,
 				5D913ABB27AFC879009DE4FD /* LoginView.swift */,
-				5D49DD8A27B3194D0095D3E9 /* NameView.swift */,
-				5D49DDBB27B3EC360095D3E9 /* GroupView.swift */,
+				5DC054A127BAA0EE0077A75B /* MainScreenView.swift */,
+				5DC054AB27BAA15D0077A75B /* FriendsView.swift */,
+				5DC054A827BAA13A0077A75B /* GalleryView.swift */,
+				5DC054A027BAA0BA0077A75B /* 2_HW_View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				5D49DDBA27B3EC110095D3E9 /* Core */,
+				5D164D9027B9B0B4009C6465 /* Model */,
 				5D49DDB927B3EBB20095D3E9 /* Heplers */,
 				5D49DD8927B319310095D3E9 /* Views */,
 				5D49DD9027B31C2A0095D3E9 /* Extensions */,
@@ -108,6 +138,15 @@
 				5D913AC027AFC87A009DE4FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DC054A027BAA0BA0077A75B /* 2_HW_View */ = {
+			isa = PBXGroup;
+			children = (
+				5D49DD8A27B3194D0095D3E9 /* NameView.swift */,
+				5D49DDBB27B3EC360095D3E9 /* GroupView.swift */,
+			);
+			path = 2_HW_View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +165,9 @@
 			dependencies = (
 			);
 			name = VK_SwiftUI_;
+			packageProductDependencies = (
+				5DC054B427BAE1550077A75B /* QGrid */,
+			);
 			productName = VK_SwiftUI_;
 			productReference = 5D913AB627AFC879009DE4FD /* VK_SwiftUI_.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +195,9 @@
 				Base,
 			);
 			mainGroup = 5D913AAD27AFC879009DE4FD;
+			packageReferences = (
+				5DC054B327BAE1550077A75B /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 5D913AB727AFC879009DE4FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,10 +225,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D49DD8B27B3194D0095D3E9 /* NameView.swift in Sources */,
+				5DC054A227BAA0EE0077A75B /* MainScreenView.swift in Sources */,
 				5D913ABC27AFC879009DE4FD /* LoginView.swift in Sources */,
+				5D164D8D27B9AB99009C6465 /* TabBarView.swift in Sources */,
+				5DC054B127BAC40C0077A75B /* FriendPhotoModel.swift in Sources */,
+				5D164D9227B9B0DC009C6465 /* FriendModel.swift in Sources */,
+				5D164D8927B9A7FA009C6465 /* ContainerView.swift in Sources */,
 				5D49DDBC27B3EC360095D3E9 /* GroupView.swift in Sources */,
 				5D49DD9227B31C390095D3E9 /* View.swift in Sources */,
+				5DC054AC27BAA15D0077A75B /* FriendsView.swift in Sources */,
 				5D913ABA27AFC879009DE4FD /* VK_SwiftUI_App.swift in Sources */,
+				5DC054A927BAA13A0077A75B /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DC054B327BAE1550077A75B /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DC054B427BAE1550077A75B /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DC054B327BAE1550077A75B /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D913AAE27AFC879009DE4FD /* Project object */;
 }
